@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards with Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .trash-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: red;
+        }
+        .add-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #007bff;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 1">
+                    <a href="#" class="trash-icon"><i class="fas fa-trash"></i></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 2">
+                    <a href="#" class="trash-icon"><i class="fas fa-trash"></i></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card position-relative">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 3">
+                    <a href="#" class="trash-icon"><i class="fas fa-trash"></i></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add New Data Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card add-card">
+                    <label for="file-input" class="d-flex align-items-center justify-content-center w-100 h-100">
+                        <span>+</span>
+                    </label>
+                    <input type="file" id="file-input" class="d-none">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
